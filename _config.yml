@@ -127,7 +127,7 @@ author:
       # url: "https://instagram.com/"
 
 header:
-  overlay_image: /assets/images/BioPic.jpg
+  overlay_image: "/assets/images/BioPic.jpg"
 # Site Footer
 footer:
   links:
