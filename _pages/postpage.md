@@ -1,5 +1,9 @@
 ---
 layout: archive
+title: "Archives"
 permalink: /postpage/
 author_profile: true
 ---
+{% for post in site.pages %}
+  {% include archive-single.html %}
+{% endfor %}
