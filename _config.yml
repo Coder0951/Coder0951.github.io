@@ -295,4 +295,4 @@ defaults:
       author_profile: true
 
 include:
-  ["_pages"]
+  _pages
