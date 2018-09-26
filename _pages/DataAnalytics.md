@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /MyProjects/
+permalink: /DataAnalytics/
 title: "My Projects"
 author_profile : true
 header
