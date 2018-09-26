@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Tyger Guzman"
-  avatar           : "/images/BioPic.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://media.licdn.com/dms/image/C4E03AQH3T9Hg2ZvH2Q/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=gh4u_3tw5uWuFRcWbry0cqxJsZ1YTgkcbYaKI2e1z_M" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a data anlysis."
   location         : "San Antonio, Tx"
   email            : Tyger0951@gmail.com
@@ -126,7 +126,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-  
+
 # Site Footer
 footer:
   links:
