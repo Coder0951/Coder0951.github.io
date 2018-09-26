@@ -1,8 +1,11 @@
 ---
 layout: archive
 permalink: /machinelearning/
-title: "MyProjects"
+title: "machinelearning"
 author_profile: true
+
+header:
+  image: "/images/BioPic.jpeg"
 ---
 
 {% include base_path %}
