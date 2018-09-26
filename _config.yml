@@ -126,9 +126,8 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
-  header:
-  overlay_imag: "https://image.shutterstock.com/z/stock-photo-san-antonio-texas-usa-downtown-skyline-796867324.jpg"
-
+header:
+  overlay_image: /assets/images/BioPic.jpg
 # Site Footer
 footer:
   links:
