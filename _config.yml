@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "Tyger Guzman"
-  avatar           : "/images/BioPic.jpeg " # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/BioPic.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a data anlysis."
   location         : "San Antonio, Tx"
   email            : Tyger0951@gmail.com
