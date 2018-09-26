@@ -3,7 +3,7 @@ layout: archive
 permalink: /DataAnalytics/
 title: "My Projects"
 author_profile : true
-header
+header:
   image: "/"
 ---
   {% include base_path %}
