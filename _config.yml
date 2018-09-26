@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Data Analysis"
+title                    : "Data Analytics"
 title_separator          : "-"
 name                     : "Tyger Guzman"
-description              : "Online Profolio"
+description              : "Professional Profolio."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,13 +103,13 @@ analytics:
 author:
   name             : "Tyger Guzman"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Technology Administrator"
-  location         : "San Antonio, TX"
-  email            : "Tyger0951@gmail.com"
+  bio              : "I am a data anlysis."
+  location         : "San Antonio, Tx"
+  email            :
   links:
-    - label: "Tyger0951@Gmail.com"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:Tyger0951@Gmail.com
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/coder0951.github.io"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -286,11 +286,10 @@ defaults:
       comments: # true
       share: true
       related: true
-
-#_pages
-- scope:
-    path: ""
-    type: Pages
-  values:
-    layout: single
-    author_profile : true
+#pages
+-scope:
+  path: ""
+  type: pages
+values:
+  layout: single
+  author_profile : true
