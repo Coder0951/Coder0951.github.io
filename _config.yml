@@ -107,15 +107,12 @@ author:
   location         : "San Antonio, Tx"
   email            : Tyger0951@gmail.com
   links:
-    - label: "Tyger0951@gmail.com"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:Tyger0951@gmail.com
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/Coder0951"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/tyger-guzman-a7166490"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Coder0951"
 
 
 # Site Footer
