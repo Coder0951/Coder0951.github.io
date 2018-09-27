@@ -105,15 +105,18 @@ author:
   avatar           : "https://media.licdn.com/dms/image/C4E03AQH3T9Hg2ZvH2Q/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=gh4u_3tw5uWuFRcWbry0cqxJsZ1YTgkcbYaKI2e1z_M" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analysis with Call Center Background"
   location         : "San Antonio, Tx"
-    -url: "https://www.google.com/maps/place/San+Antonio,+TX/data=!4m2!3m1!1s0x865c58af04d00eaf:0x856e13b10a016bc?sa=X&ved=2ahUKEwj7m73E2trdAhUBPa0KHcEqAH0Q8gEwAHoECAAQAQ"
   email            : Tyger0951@gmail.com
   links:
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/tyger-guzman-a7166490"
+    - label: "Tyger0951@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:Tyger0951@gmail.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Coder0951"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/tyger-guzman-a7166490"
+
 
 # Site Footer
 footer:
