@@ -126,7 +126,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
     - label: "LinkedIn"
-      icon: "https://static.licdn.com/sc/h/95o6rrc5ws6mlw6wqzy0xgj7y"
+      icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/tyger-guzman-a7166490"
 
 
