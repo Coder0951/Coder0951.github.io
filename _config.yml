@@ -283,3 +283,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+defaults:
+  # splash
+  - scope:
+      path: ""
+      type: splash
+    values:
+      author_profile: true
