@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple mashup example</title>
+    <script src="https://spotfire-next.cloud.tibco.com/spotfire/js-api/loader.js"></script>
+</head>
+<body>
+    <div id="Accordian"></div>
+</body>
+<script>
+    var app;
+    var doc;
+    var webPlayerServerRootUrl = "https://spotfire-next.cloud.tibco.com/spotfire/wp/";
+    var customizationInfo;
+    var analysisPath = "/Users/wtzbce3xbqbnnrncgsclk2mz7lfykyne/Public/Metrics_Example1";
+    var parameters = '';
+    var reloadInstances = true;
+    var apiVersion = "7.14";
+
+    spotfire.webPlayer.createApplication(
+        webPlayerServerRootUrl,
+        customizationInfo,
+        analysisPath,
+        parameters,
+        reloadInstances,
+        apiVersion,
+        onReadyCallback,
+        onCreateLoginElement
+        );
+
+    function onReadyCallback(response, newApp)
+    {
+        app = newApp;
+        if(response.status === "OK")
+        {
+            // The application is ready, meaning that the api is loaded and that
+            // the analysis path is validated for the current session
+            // (anonymous or logged in user)
+            console.log("OK received. Opening document to page 0 in element renderAnalysis")
+            doc1 = app.openDocument("Data_Example", 0);
+            doc2 = app.openDocument("Accordian", 0);
+            doc3 = app.openDocument("Data_Example2", 0);
+            doc4 = app.openDocument("R_Script", 0);
+            doc5 = app.openDocument("Simple_Example", 0);
+
+        }
+        else
+        {
+            console.log("Status not OK. " + response.status + ": " + response.message)
+        }
+    }
+
+    function onError(error)
+    {
+        console.log("Error: " + error);
+    }
+
+    function onCreateLoginElement()
+    {
+        console.log("Creating the login element");
+
+        // Optionally create and return a div to host the login button
+        return null;
+    }
+</script>
+</html>
