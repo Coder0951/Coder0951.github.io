@@ -2,9 +2,6 @@
 layout: home
 author_profile: true
 
-header:
-  overlay_color: "#5e616c"
-
 feature_row:
   - image_path: /images/BioPic.jpg
     alt: " "
