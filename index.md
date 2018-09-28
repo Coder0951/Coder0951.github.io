@@ -2,4 +2,26 @@
 layout: categories
 author_profile: true
 ---
-My Projects
+
+My main expertise is Spotfire, Excel , Python, R Script. I have also worked with various softwares such as Verint , Cisco Telephony/Unified Reporting , Avaya CMS, SharePoint to name a few. Other programming languages I'm proficient are VBA, HTML , CSS , Js, Jquery.
+
+-Spotfire
+    -Data Wrangling
+    -Custom Functions
+    -TERR
+    -Visualizations
+-SharePoint
+    -Site Collection Admin
+    -Team Sites
+    -Workflows
+    -SP Designer
+    -Custom css
+-Excel
+    -VBA
+    -PowerQuery
+-Database Experience with :
+    -Verint
+    -Cisco Unified Reporting (Telephony)
+    -Avaya CMS (Reporting Automation Excel)
+
+Projects:
