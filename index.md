@@ -2,22 +2,27 @@
 layout: home
 author_profile: true
 
+header:
+  overlay_color: "#5e616c"
+
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /images/BioPic.jpg
     alt: " "
     title: "Spotfire"
     excerpt: "This is a sentence"
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Posts"
-  - image_path: /assets/images/mm-responsive-feature.png
+
+  - image_path: /images/BioPic.jpg
     alt: ""
     title: "Excel"
     excerpt: "Today is Today."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Posts"
-  - image_path: /assets/images/mm-free-feature.png
+
+  - image_path: /images/BioPic.jpg
     alt: ""
     title: "Py & R"
     excerpt: "Hello World"
