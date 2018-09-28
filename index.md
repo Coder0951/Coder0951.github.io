@@ -36,23 +36,6 @@ github:
 intro:
   - excerpt: 'Get notified when I add new stuff &nbsp; [<i class="fab fa-twitter"></i> @mmistakes](https://twitter.com/mmistakes){: .btn .btn--twitter} [<i class="fab fa-paypal"></i> Tip Me](https://www.paypal.me/mmistakes){: .btn .btn--primary}'
 
-
-
-  # Site Author
-  author:
-    name             : "Tyger Guzman"
-    avatar           : "https://media.licdn.com/dms/image/C4E03AQH3T9Hg2ZvH2Q/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=gh4u_3tw5uWuFRcWbry0cqxJsZ1YTgkcbYaKI2e1z_M" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-    bio              : "Data Analysis with Call Center Background"
-    location         : "San Antonio, Tx"
-    email            : Tyger0951@gmail.com
-    links:
-      - label: "LinkedIn"
-        icon: "fab fa-linkedin"
-        url: "https://www.linkedin.com/in/tyger-guzman-a7166490"
-      - label: "GitHub"
-        icon: "fab fa-fw fa-github"
-        url: "https://github.com/Coder0951"
-
 ---
 
 {% include feature_row id="intro" type="center" %}
