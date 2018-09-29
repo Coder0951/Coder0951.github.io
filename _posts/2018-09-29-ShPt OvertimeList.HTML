@@ -1,0 +1,22 @@
+---
+categories: [Sharepoint]
+---
+<html>
+<head>
+  <title>Overtime Sign-Up</title>
+  <basefont face="Segoe UI" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/307881 (en-US, DDL); Windows/10.0.0 (Win64);"/>
+  <style>
+    body, td {
+      font-family: Segoe UI;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="470"/>
+
+<div>
+<span><div><b>Problem: </b></div><div><b>   </b> Create a sign up list with a set number of seats per session. <br/></div><div><br/></div><div><b>Solution: </b></div><div><span>    </span>Two interconnected lists that update seat numbers </div><div><br/></div><div><br/></div><div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;"><div>=IF(Closed=TRUE,&quot;Closed for registration&quot;,IF(RemainingSeats&gt;0,&quot;&lt;a href='http://sitebuilder2/diabetes/Operations_Group/WFMPortal/Lists/Helpline%20OT%20Sign%20Up%20Attendees%20List/Item/newifs.aspx?List=7abad2c0%2Da4a1%2D4585%2D8214%2D69f7011d38ab&amp;RootFolder=&amp;Web=e9a06336%2D6c38%2D4070%2Daa35%2D924aeb8ff85c&amp;meeting_id=&quot;&amp;StaticID&amp;&quot;&amp;Source=http://sitebuilder2/diabetes/Operations_Group/WFMPortal/Lists/Helpline%20OT%20Sign%20Up' onclick='OpenLandLRegistration(&quot;&amp;StaticID&amp;&quot;)'&gt;Register&lt;/a&gt;&quot;,&quot;Class is Full&quot;))</div></div><div><br/></div><div><br/></div><div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;"><div>=IF(ISBLANK(Seats-FilledSeats),Seats,Seats-FilledSeats)</div></div><div><br/></div><div><br/></div><div><img src="/images/SHPT1.png" type="image/png" data-filename="Image.png"/></div><div><br/></div><div><br/></div><div><img src="/images/ShPT2.png" type="image/png" data-filename="Image.png"/></div><div><br/></div><div><br/></div><div><img src="/images/ShPt3.png" type="image/png" data-filename="Image.png"/></div><div><br/></div><div><br/></div><div><br/></div><div><br/></div></span>
+</div></body></html>
