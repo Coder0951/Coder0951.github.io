@@ -39,6 +39,10 @@ Semantic Diversity:
 
 **Sample Selection from Portfolio**
 
+**Sample 1: Casual Outdoor Setting (Seed 966983)**
+
+![Casual outdoor portrait - Generated synthetic character in outdoor setting with natural lighting](/images/synthetic-data/char_char1_seed_966983_scenario_26_01.png)
+
 ```
 Image 1: IMG_seed966983_scenario_casual_001.png
 ├─ Quality score: 0.91/1.0
@@ -48,6 +52,37 @@ Image 1: IMG_seed966983_scenario_casual_001.png
 ├─ Characteristics: Casual outfit, warm lighting, frontal
 ├─ Use case: Baseline casual variation
 └─ Visual: Friendly expression, outdoor-style lighting
+```
+
+**Sample 2: Professional Grocery Store Setting (Seed 966991)**
+
+![Professional casual in grocery store - Generated synthetic character in retail environment](/images/synthetic-data/char_char1_seed_966991_scenario_10_02.png)
+
+```
+Image 2: IMG_seed966991_scenario_professional_casual_052.png
+├─ Quality score: 0.86/1.0
+├─ Cluster: 4 (Dynamic pose)
+├─ Seed: 966991
+├─ Type: Scenario
+├─ Characteristics: Professional casual attire, indoor lighting, shelf background
+├─ Use case: Contextual variation in retail/business setting
+└─ Visual: Professional smile, realistic indoor environment
+```
+
+**Sample 3: Professional Bar Setting (Seed 966992)**
+
+![Professional attire at bar - Generated synthetic character in hospitality setting](/images/synthetic-data/char_char1_seed_966992_scenario_33_02.png)
+
+```
+Image 3: IMG_seed966992_scenario_professional_bar_053.png
+├─ Quality score: 0.89/1.0
+├─ Cluster: 2 (Frontal angle variant)
+├─ Seed: 966992
+├─ Type: Scenario
+├─ Characteristics: Professional business attire, warm bar lighting, ambient background
+├─ Use case: Professional hospitality/service industry variation
+└─ Visual: Confident expression, professional grooming, atmospheric lighting
+```
 
 Image 2: IMG_seed966985_original_022.png
 ├─ Quality score: 0.87/1.0
