@@ -1,32 +1,49 @@
 import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const Navigation: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="/" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
+        <Link to="/" className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition-colors">
           &lt;coder0951 /&gt;
-        </a>
+        </Link>
         
         <div className="hidden md:flex items-center gap-8">
-          <a href="#hero" className="text-slate-300 hover:text-blue-400 transition-colors">
+          <button onClick={() => scrollToSection('hero')} className="text-slate-300 hover:text-blue-400 transition-colors">
             Home
-          </a>
-          <a href="#about" className="text-slate-300 hover:text-blue-400 transition-colors">
+          </button>
+          <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-blue-400 transition-colors">
             About
-          </a>
-          <a href="#experience" className="text-slate-300 hover:text-blue-400 transition-colors">
+          </button>
+          <button onClick={() => scrollToSection('experience')} className="text-slate-300 hover:text-blue-400 transition-colors">
             Experience
-          </a>
-          <a href="#skills" className="text-slate-300 hover:text-blue-400 transition-colors">
+          </button>
+          <button onClick={() => scrollToSection('skills')} className="text-slate-300 hover:text-blue-400 transition-colors">
             Skills
-          </a>
-          <a href="#projects" className="text-slate-300 hover:text-blue-400 transition-colors">
+          </button>
+          <button onClick={() => scrollToSection('projects')} className="text-slate-300 hover:text-blue-400 transition-colors">
             Projects
-          </a>
-          <a href="/posts" className="text-slate-300 hover:text-blue-400 transition-colors">
+          </button>
+          <Link to="/posts" className="text-slate-300 hover:text-blue-400 transition-colors">
             Posts
-          </a>
+          </Link>
           <a
             href="https://github.com/coder0951"
             target="_blank"

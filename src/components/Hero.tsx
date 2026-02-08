@@ -60,18 +60,24 @@ export const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 mb-12">
-          <a
-            href="#projects"
+          <button
+            onClick={() => {
+              const element = document.getElementById('projects');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium text-lg shadow-lg shadow-blue-500/30"
           >
             View My Work
-          </a>
-          <a
-            href="#experience"
+          </button>
+          <button
+            onClick={() => {
+              const element = document.getElementById('experience');
+              element?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="px-8 py-3 border-2 border-slate-700 hover:border-blue-500 text-slate-300 hover:text-blue-400 rounded-lg transition-colors font-medium text-lg"
           >
             Experience →
-          </a>
+          </button>
         </div>
 
         {/* Key Stats */}

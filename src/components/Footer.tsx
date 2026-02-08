@@ -1,7 +1,23 @@
 import React from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <footer className="border-t border-slate-800 py-12 px-4">
@@ -19,14 +35,14 @@ export const Footer: React.FC = () => {
             <h3 className="text-lg font-bold text-slate-100 mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#projects" className="text-slate-400 hover:text-blue-400 transition-colors">
+                <button onClick={() => scrollToSection('projects')} className="text-slate-400 hover:text-blue-400 transition-colors">
                   Projects
-                </a>
+                </button>
               </li>
               <li>
-                <a href="/forensics" className="text-slate-400 hover:text-blue-400 transition-colors">
+                <Link to="/forensics" className="text-slate-400 hover:text-blue-400 transition-colors">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="https://github.com/coder0951" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition-colors">
