@@ -3,7 +3,7 @@ title: "Python CSV Files Combine"
 date: 2018-09-26
 category: Python
 tags: [python, scripting, automation]
-summary: "Combine x number of CSV files. Each file has a header and second row of "-----" as a place holder."
+summary: 'Combine x number of CSV files. Each file has a header and second row of "-----" as a place holder.'
 ---
 
 # Python CSV Files Combine
