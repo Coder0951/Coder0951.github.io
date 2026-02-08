@@ -1,6 +1,5 @@
 {
   "name": "mywebsite",
-  "homepage": "https://coder0951.github.io/MyWebsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
