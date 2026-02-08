@@ -24,21 +24,6 @@ export const ProjectSection: React.FC = () => {
         ))}
       </div>
 
-      {/* Call to action */}
-      <div className="mt-16 p-8 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-lg text-center">
-        <h3 className="text-2xl font-bold text-slate-100 mb-2">Want to learn more?</h3>
-        <p className="text-slate-400 mb-4">
-          Explore the detailed technical documentation for each project
-        </p>
-        <a
-          href="https://github.com/coder0951"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"
-        >
-          View on GitHub →
-        </a>
-      </div>
     </section>
   );
 };

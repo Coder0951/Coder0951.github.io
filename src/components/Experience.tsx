@@ -38,7 +38,7 @@ export const Experience: React.FC = () => {
           Professional Experience
         </h2>
         <p className="text-xl text-slate-400">
-          Building innovative AI solutions with focus on security, scalability, and impact.
+          Building innovative solutions with focus on security, scalability, and impact.
         </p>
       </div>
 

@@ -10,6 +10,7 @@ import { PostPage } from './components/PostPage';
 import ProjectOpenTheEyes from './components/ProjectOpenTheEyes';
 import ProjectKnowledgeEngineering from './components/ProjectKnowledgeEngineering';
 import ProjectSyntheticData from './components/ProjectSyntheticData';
+import ProjectArchitecturalFragility from './components/ProjectArchitecturalFragility';
 import { Footer } from './components/Footer';
 import './App.css';
 
@@ -24,11 +25,11 @@ function HomePage() {
       <div id="experience">
         <Experience />
       </div>
-      <div id="skills">
-        <Skills />
-      </div>
       <div id="projects">
         <ProjectSection />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
       <Footer />
     </>
@@ -57,6 +58,7 @@ function App() {
         <Route path="/projects/open-the-eyes" element={<ProjectOpenTheEyes />} />
         <Route path="/projects/knowledge-engineering" element={<ProjectKnowledgeEngineering />} />
         <Route path="/projects/synthetic-data" element={<ProjectSyntheticData />} />
+        <Route path="/projects/architectural-fragility" element={<ProjectArchitecturalFragility />} />
         <Route path="/forensics/*" element={<ForensicDocPage />} />
       </Routes>
     </Router>

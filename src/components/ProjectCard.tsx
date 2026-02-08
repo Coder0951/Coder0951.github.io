@@ -73,14 +73,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             Forensic Documentation →
           </Link>
         )}
-        <a
-          href={project.githubUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white rounded-md transition-colors font-medium text-sm"
-        >
-          GitHub
-        </a>
       </div>
     </div>
   );

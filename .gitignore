@@ -21,3 +21,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.TEMP_PROJECT_DETAILS/*

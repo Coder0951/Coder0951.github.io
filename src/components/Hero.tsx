@@ -67,12 +67,10 @@ export const Hero: React.FC = () => {
             View My Work
           </a>
           <a
-            href={resumeData.github}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#experience"
             className="px-8 py-3 border-2 border-slate-700 hover:border-blue-500 text-slate-300 hover:text-blue-400 rounded-lg transition-colors font-medium text-lg"
           >
-            GitHub Profile →
+            Experience →
           </a>
         </div>
 

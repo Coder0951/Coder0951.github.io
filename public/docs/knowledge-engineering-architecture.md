@@ -155,7 +155,7 @@ CORE_IDENTITY:
 ```
 AI_FORENSICS:
 ├── Adversarial Red-Teaming (LLM Audit)
-│   ├── 467-message forensic audit documented
+│   ├── 640-entry forensic audit documented
 │   ├── Instruction Hierarchy Inversion discovered
 │   ├── NIST AI RMF 1.0 mapping (GOVERN, MAP, MANAGE)
 │   └── Remediation via Instruction Weight Reinforcement

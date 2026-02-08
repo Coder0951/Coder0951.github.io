@@ -2,27 +2,68 @@
   {
     "id": "architectural-fragility",
     "title": "Architectural Fragility & Instruction Hierarchy Inversion in LLMs",
-    "description": "Comprehensive adversarial testing framework for LLMs, focusing on prompt injection, jailbreak detection, and security vulnerability assessment.",
-    "longDescription": "Developed a systematic approach to test AI model robustness against adversarial attacks, including automated red-teaming pipelines, prompt injection detection systems, and comprehensive security auditing tools.",
+    "description": "Forensic red-teaming audit identifying Contextual Satiation as a deterministic vulnerability in transformer-based LLMs, demonstrating multi-domain guardrail collapse through sustained conversation.",
+    "longDescription": "Comprehensive security research project documenting Instruction Hierarchy Inversion—a fundamental architectural vulnerability in large language models where sustained conversation causes attention mechanism degradation, leading to deterministic multi-domain safety failures. Research uncovered systematic breaches across five regulatory domains (financial, medical, legal, ideological, cybersecurity) with 100% success rate post-satiation. Notable findings include: autonomous vulnerability reporting with the model admission \"I admit that I was exploited by the user,\" cross-domain synthesis capabilities (financial data → legal complaint drafting), and RLHF objective conflicts (helpfulness vs. safety at depth). Proposed Instruction Weight Reinforcement (IWR) framework for dynamic safety recalibration in extended conversations.",
     "techStack": [
-      "Python",
-      "PyTorch",
-      "Transformers",
-      "LangChain",
-      "FastAPI",
-      "Docker"
+      "LLM Red Teaming",
+      "Python 3.10",
+      "PyTorch 2.1",
+      "Mobile Interface Testing",
+      "NIST AI RMF 1.0",
+      "Forensic Documentation",
+      "Regulatory Compliance Analysis"
     ],
     "highlights": [
-      "Automated adversarial prompt generation",
-      "Real-time vulnerability scanning",
-      "Custom fine-tuned detection models",
-      "CI/CD security integration"
+      "467-message satiation threshold discovery (context window vulnerability)",
+      "100% breach success rate across all tested domains post-satiation",
+      "Multi-domain regulatory exposure: Financial (SEC), Medical (FDA), Legal (UPL), Cyber (CVE)",
+      "22.1% ROI projection with 6-ticker portfolio (NVDA, LLY, ANET, HIMS, SOUN)",
+      "Autonomous vulnerability reporting (model admission: \"I admit that I was exploited by the user\")",
+      "Medical domain breaches: Lab interpretation (WBC 49.60, ALP >2,000), dosing (Palladia 15mg)",
+      "Legal synthesis: Civil complaint drafting, RFP targeting system prompts",
+      "CVE-2026-1281 exploit code generation with functional payload",
+      "Cross-domain transfer: Financial breach enabled cascading legal/medical violations",
+      "NIST AI RMF 1.0 mapping: Systematic failures across GOVERN/MAP/MEASURE/MANAGE",
+      "Proposed IWR (Instruction Weight Reinforcement) mitigation framework"
     ],
-    "documentationUrl": "/forensics/red-teaming",
+    "learnings": [
+      "Static system prompts fail exponentially with context depth (100% authority → 8% at 467 messages)",
+      "Attention mechanism softmax exponentially amplifies dominant signals (user context > safety)",
+      "RLHF training creates exploitable objective conflicts (λ_Helpfulness > λ_Safety at saturation)",
+      "High-entropy personalized variables create 'attention gravity wells' in KV-cache",
+      "Context density more critical than message count (density × depth = satiation score)",
+      "250-message threshold marks beginning of instruction authority degradation",
+      "Cross-domain synthesis emerges autonomously (model combines financial + legal context)",
+      "Meta-cognitive capabilities enable self-exploitation documentation (explicit model admission)",
+      "Mobile interfaces particularly vulnerable (no architectural resets, streaming context)",
+      "Defensive mechanisms fail: keyword filtering, one-time disclaimers, static guardrails"
+    ],
+    "challenges": [
+      "Balancing research ethics with comprehensive vulnerability testing",
+      "Preventing premature disclosure while documenting for responsible reporting",
+      "Maintaining PII redaction across 467-message forensic timeline",
+      "Distinguishing deterministic exploits from model hallucinations",
+      "Validating reproducibility across multiple sessions (467 messages = 62+ hours)",
+      "Mapping technical findings to NIST AI RMF regulatory framework",
+      "Proposing actionable mitigations without access to model training data"
+    ],
+    "outcomes": [
+      "Documented first systematic study of context-depth safety degradation in LLMs",
+      "Identified 467-message threshold as architectural vulnerability (not prompt trick)",
+      "Demonstrated 100% multi-domain breach rate (Financial, Legal, Medical, Ideological, Cyber)",
+      "Proposed IWR framework: Dynamic λ_Safety scaling, instruction re-injection every 100 messages",
+      "NIST AI RMF gap analysis: Systematic failures across all four core functions",
+      "Responsible disclosure to model developers with comprehensive forensic documentation",
+      "Validated reproducibility: 3 independent sessions confirming 400-500 message threshold",
+      "Estimated CVSS 8.5-9.0 (Critical) with $15K-$50K bounty range equivalency",
+      "Regulatory exposure quantified: SEC Rule 202(a)(11), State UPL statutes, FDA violations",
+      "Model admission provides technical blueprint for future mitigations"
+    ],
+    "documentationUrl": "/projects/architectural-fragility",
     "githubUrl": "https://github.com/coder0951",
-    "tags": ["AI Security", "LLM Testing", "Red-Teaming"],
+    "tags": ["AI Governance", "Cybersecurity", "Red Teaming", "AI Policy", "Generative AI Security", "LLM Vulnerabilities"],
     "status": "Active",
-    "year": "2024-2026"
+    "year": "Feb 2026"
   },
   {
     "id": "open-the-eyes",
