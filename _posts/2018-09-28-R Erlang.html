@@ -1,0 +1,23 @@
+---
+categories: [R Script]
+---
+
+<html>
+<head>
+  <title>R Script - Erlang</title>
+  <basefont face="Segoe UI" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/307881 (en-US, DDL); Windows/10.0.0 (Win64);"/>
+  <style>
+    body, td {
+      font-family: Segoe UI;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="507"/>
+
+<div>
+<span><div>Rewrote the ExcelVBA code from Erlang.xlsx sheet for call center calculations.</div><div><br/></div><div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;"><div>ErlangB &lt;- function(servers,intensititys)</div><div>{   </div><div>  z &lt;- if(servers &lt; 0) 0</div><div>  z &lt;- if(intensititys &lt; 0) 0</div><div>  MaxIterate &lt;- as.integer(servers)</div><div>  Val &lt;- intensititys</div><div>  Last &lt;- 1    </div><div>  for( i in 1:MaxIterate)</div><div>  { z &lt;- (Val * Last) / (i + (Val * Last))</div><div>  Last &lt;- z  </div><div>  }</div><div>  z&lt;-ifelse(z&lt;0,0,z)</div><div>  z&lt;-ifelse(z&gt;1,1,z)</div><div>  print(z)</div><div>  z</div><div>}</div><div><br/></div><div>ErlangC &lt;- function(server,intensitity)</div><div>{  </div><div>  x &lt;- if(server &lt; 0) 0</div><div>  x &lt;- if(intensitity &lt; 0) 0   </div><div>  B &lt;- ErlangB(servers=server,intensititys=intensitity)</div><div>  C &lt;- B / (((intensitity / server) * B) + (1 - (intensitity / server)))    </div><div>  C&lt;-ifelse(C&lt;0,0,C)</div><div>  C&lt;-ifelse(C&gt;1,1,C)</div><div>  x &lt;- C</div><div>  print(x)</div><div>  x</div><div>}</div><div><br/></div><div><br/></div><div>ErlangASA &lt;- function(Agents,CPH,AHT)</div><div>{ BirthRate &lt;- CPH</div><div>DeathRate &lt;- 3600 / AHT</div><div>TrafficRate &lt;- BirthRate / DeathRate</div><div>Server &lt;- Agents</div><div>Utilisation &lt;- TrafficRate / Server        </div><div>Utilisation &lt;-ifelse(Utilisation&gt;=1,.99,Utilisation)</div><div><br/></div><div><br/></div><div>print(BirthRate)</div><div>print(DeathRate)</div><div>print(TrafficRate)</div><div>print(Agents)</div><div>print(Utilisation)</div><div>C &lt;-ErlangC(server=Agents,intensitity=TrafficRate)</div><div>AnswerTime &lt;- C / (Server * DeathRate * (1 - Utilisation))</div><div>AveAnswer &lt;- as.integer(AnswerTime * 3600 +.5)</div><div>ASA &lt;- AveAnswer      </div><div>ASA</div><div>print(ASA)</div><div>}</div><div><br/></div><div>output &lt;- ErlangASA(Agents=50,CPH=300,AHT=924)</div><div><br/></div><div><br/></div><div>print(output)</div><div><br/></div><div><br/></div></div><div><br/></div></span>
+</div></body></html>

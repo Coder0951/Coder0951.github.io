@@ -1,0 +1,174 @@
+---
+categories: [Spotfire]
+---
+<html>
+
+<head>
+  <title>Spotfire SQLDF</title>
+  <basefont face="Segoe UI" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/307881 (en-US, DDL); Windows/10.0.0 (Win64);" />
+  <style>
+    body, td {
+      font-family: Segoe UI;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+
+<body>
+  <a name="398"/>
+
+<div>
+<span><div><div><div><font style="font-size: 12pt;"><span style="font-size: 12pt; font-weight: bold;">Problem: </span></font> </div><div>    Spotfire joins are based on exact matches and out of the box is not capable of date/datetime comparison when adding columns from another table.  How do you join two tables based on a date range?</div><div><br/></div><div>Example: I have a table of metrics of an Employee and they change departments. Their assignment is on separate table.   </div><hr/><div><div><div><br/></div><div>Example Table #1 :</div><table style="border-collapse: collapse; min-width: 100%;"><colgroup><col style="width: 48px;"></col><col style="width: 76px;"></col><col style="width: 48px;"></col></colgroup><tbody><tr><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">ID</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 76px; padding: 8px;"><div><span style="font-size: 8pt;">Date</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">Metric</span></div></td></tr><tr><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">1</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 76px; padding: 8px;"><div><span style="font-size: 8pt;">02/02/2008</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">100</span></div></td></tr><tr><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">1</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 76px; padding: 8px;"><div><span style="font-size: 8pt;">02/02/2009</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">120</span></div></td></tr><tr><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">1</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 76px; padding: 8px;"><div><span style="font-size: 8pt;">02/02/2010</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 48px; padding: 8px;"><div><span style="font-size: 8pt;">110</span></div></td></tr></tbody></table><div><br/></div></div><div><font style="font-size: 10pt;">Example Table #2 :</font></div><table style="border-collapse: collapse; min-width: 100%;"><colgroup><col style="width: 49px;"></col><col style="width: 81px;"></col><col style="width: 72px;"></col><col style="width: 84px;"></col></colgroup><tbody><tr><td style="border: 1px solid rgb(204, 204, 204); width: 49px; padding: 8px;"><div><span style="font-size: 8pt;">ID</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 81px; padding: 8px;"><div><span style="font-size: 8pt;">Assignment</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 72px; padding: 8px;"><div><span style="font-size: 8pt;">FromDate</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 84px; padding: 8px;"><div><span style="font-size: 8pt;">ToDate</span></div></td></tr><tr><td style="border: 1px solid rgb(204, 204, 204); width: 49px; padding: 8px;"><div><span style="font-size: 8pt;">1</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 81px; padding: 8px;"><div><span style="font-size: 8pt;">Sales</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 72px; padding: 8px;"><div><span style="font-size: 8pt;">01/01/2000</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 84px; padding: 8px;"><div><span style="font-size: 8pt;">12/31/2009</span></div></td></tr><tr><td style="border: 1px solid rgb(204, 204, 204); width: 49px; padding: 8px;"><div><span style="font-size: 8pt;">1</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 81px; padding: 8px;"><div><span style="font-size: 8pt;">Billing</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 72px; padding: 8px;"><div><span style="font-size: 8pt;">01/01/2010</span></div></td><td style="border: 1px solid rgb(204, 204, 204); width: 84px; padding: 8px;"><div><span style="font-size: 8pt;">12/31/2065</span></div></td></tr></tbody></table><div><br/></div><hr/><div><br/></div><div><span style="font-size: 12pt; font-weight: bold;">Solution:</span></div><div><span style="font-size: 12pt; font-weight: bold;">   </span> <font style="font-size: 8pt;">Utilize R Script sqldf library! (<a href="https://cran.r-project.org/web/packages/sqldf/sqldf.pdf">Full</a>
+  <a href="https://cran.r-project.org/web/packages/sqldf/sqldf.pdf">Documentation</a>)</font> </div>
+  </div>
+  </div>
+  <div><span style="font-size: 9pt; color: rgb(51, 51, 51); font-family: Monaco;"><br/></span></div>
+  <div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;">
+    <div># Define t_Metrics and t_Assignment as Input Parameter</div>
+    <div># Define output as Output Parameter</div>
+    <div><br/></div>
+      <div>#Change Date(s) to Text for SqlDF</div>
+      <div>t_Metrics$Date &lt;- as.character(t_Metrics$Date)</div>
+      <div>t_Assignment$ToDate &lt;- as.character(t_Assignment$ToDate)</div>
+      <div>t_Assignment$FromDate &lt;- as.character(t_Assignment$FromDate)</div>
+      <div><br/></div>
+        <div>#Query To Combine All Data</div>
+        <div>output &lt;- sqldf(&quot; Select m.ID,</div>
+        <div>                         m.Date,</div>
+        <div>                         m.Metric,</div>
+        <div>                         a.Assignment</div>
+        <div>                    From   t_Metrics m ,  t_Assignment a                    </div>
+        <div>                    Where  m.Date Between a.FromDate and a.ToDate</div>
+        <div>                            and a.ID= m.ID &quot;)<span style="font-size: 8pt;">            </span><br/></div>
+        </div>
+        <div>
+          <div><br/></div>
+            <div>Example Table #3</div>
+            <table style="border-collapse: collapse; min-width: 100%;">
+              <colgroup>
+                <col style="width: 56px;">
+                </col>
+                <col style="width: 72px;">
+                </col>
+                <col style="width: 48px;">
+                </col>
+                <col style="width: 108px;">
+                </col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td style="width: 56px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">ID</span></div>
+                  </td>
+                  <td style="width: 72px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">Date</span></div>
+                  </td>
+                  <td style="width: 48px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">Metric</span></div>
+                  </td>
+                  <td style="width: 108px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div>Assignment</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 56px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">1</span></div>
+                  </td>
+                  <td style="width: 72px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">02/02/2008</span></div>
+                  </td>
+                  <td style="width: 48px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">100</span></div>
+                  </td>
+                  <td style="width: 108px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div>Sales</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 56px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">1</span></div>
+                  </td>
+                  <td style="width: 72px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">02/02/2009</span></div>
+                  </td>
+                  <td style="width: 48px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">120</span></div>
+                  </td>
+                  <td style="width: 108px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div>Sales</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width: 56px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">1</span></div>
+                  </td>
+                  <td style="width: 72px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">02/02/2010</span></div>
+                  </td>
+                  <td style="width: 48px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div><span style="font-size: 8pt;">110</span></div>
+                  </td>
+                  <td style="width: 108px; padding: 8px; border: 1px solid rgb(204, 204, 204);">
+                    <div>Billing</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <div><br/></div>
+            </div>
+            <div>Example in Spotfire : </div>
+            <div><br/></div>
+              <ol>
+                <li>
+                  <div>Register Data Function </div>
+                </li>
+                <ul>
+                  <li>
+                    <div><img src="/images/SQLDF_1.png" type="image/png" data-filename="SQLDF_1.png" width="362"/></div>
+                  </li>
+                </ul>
+                <li>
+                  <div>Define Inputs</div>
+                </li>
+                <ul>
+                  <li>
+                    <div><img src="/images/SQLDF_2.png" type="image/png" data-filename="SQLDF_2.png" width="361"/></div>
+                  </li>
+                </ul>
+                <li>
+                  <div>Both inputs an outputs</div>
+                </li>
+                <ul>
+                  <li>
+                    <div><img src="/images/SQLDF_3.png" type="image/png" data-filename="SQLDF_3.png" width="363"/></div>
+                  </li>
+                </ul>
+                <li>
+                  <div>Run the Function to specify what data tables to use and what columns</div>
+                </li>
+                <ul>
+                  <li>
+                    <div><img src="/images/SQLDF_6.png" type="image/png" data-filename="SQLDF_6.png" width="360"/></div>
+                  </li>
+                  <li>
+                    <div><img src="/images/SQLDF_7.png" type="image/png" data-filename="SQLDF_7.png" width="358"/></div>
+                  </li>
+                </ul>
+                <li>
+                  <div>Final Product </div>
+                </li>
+                <ul>
+                  <li>
+                    <div><img src="/images/SQLDF_8.png" type="image/png" data-filename="SQLDF_8.png" width="438"/></div>
+                  </li>
+                </ul>
+              </ol>
+              <div><br/></div>
+              </div></span>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+---
+categories: [Python]
+---
+<html>
+<head>
+  <title>SFTP FileWatcher</title>
+  <basefont face="Segoe UI" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/307881 (en-US, DDL); Windows/10.0.0 (Win64);"/>
+  <style>
+    body, td {
+      font-family: Segoe UI;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="452"/>
+
+<div>
+<span><div><div><b>Problem:</b></div><div><b>   </b> <font style="font-size: 8pt;">A CSV File is dumped into a folder and needs to be sent over a SFTP server. </font><br/></div><div><b><br/></b></div><div><b>Solutions:</b></div><div><b>   </b> <font style="font-size: 8pt;">Instead of using a file management system like FileZilla use a Python Script to watch the folder where new files are generate and move them to the SFTP server.  </font><br/></div><hr/><div><br/></div><div style="box-sizing: border-box; padding: 8px; font-family: Monaco, Menlo, Consolas, &quot;Courier New&quot;, monospace; font-size: 12px; color: rgb(51, 51, 51); border-radius: 4px; background-color: rgb(251, 250, 248); border: 1px solid rgba(0, 0, 0, 0.15);-en-codeblock:true;"><div>import pysftp</div><div>import os</div><div>import win32file</div><div>import win32event</div><div>import win32con</div><div><br/></div><div>path_to_watch = os.path.abspath(</div><div>    &quot;\\\\ent.core.company.com/mit-city01/City Public/Folder/Folder&quot;)</div><div># FindFirstChangeNotification sets up a handle for watching</div><div>#  file changes. The first parameter is the path to be</div><div>#  watched; the second is a boolean indicating whether the</div><div>#  directories underneath the one specified are to be watched;</div><div>#  the third is a list of flags as to what kind of changes to</div><div>#  watch for. We're just looking at file additions / deletions.</div><div>print('Proponisi WatchDog Running')</div><div>change_handle = win32file.FindFirstChangeNotification(</div><div>    path_to_watch, 0, win32con.FILE_NOTIFY_CHANGE_FILE_NAME</div><div>)</div><div><br/></div><div># Loop forever, listing any file changes. The WaitFor... will time out every 60 seconds allowing for keyboard interrupts to terminate the loop.</div><div>try:</div><div>    old_path_contents = dict([(f, None) for f in os.listdir(path_to_watch)])</div><div>    while 1:</div><div>        result = win32event.WaitForSingleObject(change_handle, 500)</div><div>        print(&quot;FilesCheked&quot;)</div><div>        # If the WaitFor... returned because of a notification (as opposed to timing out or some error) then look for the changes in the directory contents.</div><div>        if result == win32con.WAIT_OBJECT_0:</div><div>            # print('somechange')</div><div>            new_path_contents = dict([(f, None)</div><div>                                      for f in os.listdir(path_to_watch)])</div><div>            added = [f for f in new_path_contents if not f in old_path_contents]</div><div>            deleted = [</div><div>                f for f in old_path_contents if not f in new_path_contents]</div><div>            if added:</div><div>                print(&quot;Added: &quot;, &quot;, &quot;.join(added))</div><div>                # Defines the name of the file for download / upload</div><div>                remote_file = path_to_watch + &quot;\\&quot; + added[0]</div><div>                print(remote_file, 'Identified For Transfer')</div><div>                host = &quot;www.somewebsite.com&quot;</div><div>                username = &quot;UserName&quot;</div><div>                password = &quot;P@ssword1&quot;</div><div>                port = 22</div><div>                cnopts = pysftp.CnOpts()</div><div>                cnopts.hostkeys = None</div><div>                with pysftp.Connection(host=host, username=username, password=password, cnopts=cnopts, port=port) as sftp:</div><div>                    sftp.put(remote_file)</div><div>                    print(remote_file, &quot;Moved&quot;)</div><div>                sftp.close()</div><div>            if deleted:</div><div>                print(&quot;Deleted: &quot;, &quot;, &quot;.join(deleted))</div><div>            old_path_contents = new_path_contents</div><div>            win32file.FindNextChangeNotification(change_handle)</div><div><br/></div><div>finally:</div><div>    win32file.FindCloseChangeNotification(change_handle)</div><div><br/></div></div><div><br/></div></div></span>
+</div></body></html>
