@@ -9,6 +9,7 @@ import { PostsIndex } from './components/PostsIndex';
 import { PostPage } from './components/PostPage';
 import ProjectOpenTheEyes from './components/ProjectOpenTheEyes';
 import ProjectKnowledgeEngineering from './components/ProjectKnowledgeEngineering';
+import ProjectSyntheticData from './components/ProjectSyntheticData';
 import { Footer } from './components/Footer';
 import './App.css';
 
@@ -55,6 +56,7 @@ function App() {
         <Route path="/posts/:slug" element={<><Navigation /><PostPage /><Footer /></>} />
         <Route path="/projects/open-the-eyes" element={<ProjectOpenTheEyes />} />
         <Route path="/projects/knowledge-engineering" element={<ProjectKnowledgeEngineering />} />
+        <Route path="/projects/synthetic-data" element={<ProjectSyntheticData />} />
         <Route path="/forensics/*" element={<ForensicDocPage />} />
       </Routes>
     </Router>
