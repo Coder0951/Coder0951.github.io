@@ -72,7 +72,7 @@
     "githubUrl": "https://github.com/coder0951",
     "tags": ["Generative AI", "Diffusion Models", "Face Restoration", "Computer Vision"],
     "status": "Active",
-    "year": "2024-2026"
+    "year": "Jul 2025 - Aug 2025"
   },
   {
     "id": "synthetic-data",
@@ -141,7 +141,7 @@
     "githubUrl": "https://github.com/coder0951",
     "tags": ["Synthetic Data", "Diffusion Models", "Generative AI", "ML Training", "Reproducibility", "Curation", "Quality Control"],
     "status": "Active",
-    "year": "2024-2025"
+    "year": "Sep 2025 - Sep 2025"
   },
   {
     "id": "knowledge-engineering",
@@ -200,6 +200,6 @@
     "githubUrl": "https://github.com/coder0951",
     "tags": ["Knowledge Engineering", "RAG", "LLM Verification", "Career Logic", "Zero-Hallucination"],
     "status": "Active",
-    "year": "2024-2026"
+    "year": "Feb 2026"
   }
 ]
