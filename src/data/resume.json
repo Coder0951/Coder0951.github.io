@@ -1,0 +1,272 @@
+{
+  "name": "Tyger Guzman",
+  "title": "Full-Stack Software Engineer | Data Science & Analysis | AI Research",
+  "email": "tyger0951@gmail.com",
+  "github": "https://github.com/coder0951",
+  "location": "San Antonio, Texas Metropolitan Area",
+  "summary": "Software Engineer & Security Specialist with a 20-year history of turning complex data into actionable enterprise intelligence. At USAA, I bridge technical architecture and business value—engineering solutions across full-stack development, automated fraud detection, and adversarial AI research.",
+  
+  "experience": [
+    {
+      "id": "exp-usaa",
+      "company": "USAA",
+      "position": "Info Security Engineer",
+      "duration": "December 2021 - Present (4 years 3 months)",
+      "location": "San Antonio, TX",
+      "subRoles": [
+        {
+          "title": "Lead: Security Awareness",
+          "highlights": [
+            "**Engineering Leadership:** Direct the technical roadmap and modernization of the Security Awareness data infrastructure, ensuring security requirements are met across the application lifecycle.",
+            "**Containerized Modernization:** Architected a Python, Docker, and Kubernetes (K8s) environment via GitLab CI/CD to scale security telemetry, leveraging Site Reliability Engineering (SRE) practices.",
+            "**GenAI Innovation:** Engineered a GenAI/LLM-based Jira metadata engine (POC) using Python to automate quarterly performance audits, correlating story points with technical delivery.",
+            "**Governance Authority:** Appointed Technology Information Custodian (TIC); authored the Document Development Life Cycle (DDLC) to manage risks and meet security compliance/audit requirements.",
+            "**Vendor Integration:** Developed custom API integrations to aggregate security engagement metrics from third-party vendors into a centralized, actionable executive dashboard."
+          ]
+        },
+        {
+          "title": "Internal Fraud Monitoring",
+          "highlights": [
+            "**Fraud Detection & Risk:** Identify and manage emerging risks through automated surveillance models. Developed complex SAS code and IBM DataStage ETL pipelines to monitor and control business risks.",
+            "**Database Architecture:** Manage a dedicated Oracle database environment, including schema design, table creation, and metadata lineage documentation, ensuring data integrity across enterprise systems.",
+            "**CRM Systems:** Built and optimized a full-stack Salesforce environment to automate fraud case tracking and investigative workflows for the internal security domain."
+          ]
+        },
+        {
+          "title": "Member Identity & Access Management (MIAM)",
+          "highlights": [
+            "**Full-Stack Security:** Developed member-facing React components and Java Spring Boot APIs for the Security Preference Portal, focusing on secure authentication and authorization workflows.",
+            "**Internal CRM Tooling:** Designed and built a distinct internal CRM front-end to allow Service Representatives to manage member identity and secure authentication preferences for millions of members."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exp-teksystems",
+      "company": "TEKsystems",
+      "position": "Software Engineer",
+      "duration": "August 2021 - December 2021 (5 months)",
+      "location": "San Antonio, TX",
+      "highlights": [
+        "**Fraud Systems Engineering:** Assigned to USAA's Internal Fraud Monitoring team to engineer automated surveillance models and risk patterns using SAS and IBM DataStage.",
+        "**Data Integration:** Successfully integrated disparate enterprise data sources (Snowflake, DB2, Oracle, and SQL Server) to enhance internal threat detection capabilities.",
+        "**Performance Conversion:** Demonstrated high-impact technical delivery and systems-first problem solving, resulting in a direct full-time conversion to USAA within 5 months."
+      ]
+    },
+    {
+      "id": "exp-mphasis",
+      "company": "Mphasis",
+      "position": "Module Lead",
+      "duration": "October 2018 - August 2021 (2 years 11 months)",
+      "location": "Memphis, Tennessee",
+      "highlights": [
+        "**Global M&A Integration:** Spearheaded technical data reconciliation for the FedEx M&A, synchronizing massive global datasets across Teradata, MSSQL, Oracle, and DB2 to ensure 100% data integrity during the merger transition.",
+        "**Customer Matching & Registry:** Mastered the FedEx in-house customer matching analysis tool to identify discrepancies across disparate systems, drawing inferences to update and validate critical customer data within the global registry.",
+        "**TIBCO Data Virtualization (TDV):** Architected complex virtualized data layers and semantic views to provide real-time reporting capabilities, successfully bypassing the latency and hardware overhead of traditional physical ETL processes.",
+        "**Source-System Analysis:** Conducted deep-dive source-system analysis to massage raw data and engineer custom SQL input tables, ensuring backend data was fully optimized for high-performance TIBCO Spotfire visualizations.",
+        "**Custom Write-Back Tooling:** Engineered a specialized 'Write-Back' tool within the TIBCO environment to allow manual data corrections to be written directly to source systems, resolving critical reconciliation gaps in the global ledger.",
+        "**Executive Intelligence Dashboards:** Developed advanced TIBCO Spotfire and Tableau visualizations utilizing complex filter schemes and dynamic control properties to translate backend telemetry into actionable executive insights.",
+        "**Full-Stack Analytics Development:** Built responsive web interfaces (HTML/CSS/JS) and custom visualization components using Python and R to meet highly specific cross-functional business requirements for distributed global teams.",
+        "**Engineering Leadership:** Directed a team of developers in best practices for SDLC, Agile methodology, and advanced data modeling, ensuring the high-performance delivery of analytics platforms."
+      ]
+    },
+    {
+      "id": "exp-medtronic",
+      "company": "Medtronic",
+      "position": "Technology Administrator",
+      "duration": "February 2017 - October 2018 (1 year 9 months)",
+      "location": "San Antonio, Texas",
+      "highlights": [
+        "**Voice Recognition & Analytics:** Deployed and maintained enterprise voice recognition systems (Verint); piloted Acoustic Sentiment Analysis and Biometric Sentiment Triggers to track agent fatigue. Analyzed acoustic patterns and linguistic triggers to detect representative burnout.",
+        "**TIBCO Spotfire Architecture:** Architected enterprise-level TIBCO Spotfire Executive Intelligence Dashboards for real-time operational analytics. Engineered end-to-end data pipelines from Cisco CUIC telephony systems using complex SQL, Python, and R automation scripts.",
+        "**Cisco Telemetry Integration:** Acted as the primary technical subject matter expert for Cisco CUIC reporting. Configured custom reporting threshold alerts and backend data-push intervals to ensure high-fidelity synchronization between telephony events and workforce management platforms.",
+        "**Systems Administration:** Served as SharePoint Site Collection Administrator for department operations, managing secure collaboration platforms and the internal deployment of business intelligence tools for distributed leadership teams.",
+        "**Full-Stack Reporting Interfaces:** Designed and maintained responsive web-based interfaces for internal reporting tools. Successfully integrated automated Excel-based dashboards with interactive Spotfire components for executive leadership."
+      ]
+    },
+    {
+      "id": "exp-pace",
+      "company": "Pace",
+      "position": "Workforce Operations Analyst",
+      "duration": "July 2012 - February 2015 (2 years 8 months)",
+      "location": "San Antonio, Texas",
+      "highlights": [
+        "**VBA-Based Process Automation:** Engineered a custom VBA 'Reset Tool' utilizing Avaya API objects to programmatically clear 'stuck' agent states. This automation eliminated manual leadership intervention and recovered thousands of productive hours.",
+        "**Intraday Staffing Optimization:** Managed real-time labor costs by executing 'Early Release' (ER) protocols and adjusting lunch/break durations based on live volume trends.",
+        "**Real-Time Floor Monitoring:** Executed continuous monitoring of global call center operations to ensure strict adherence to Service Level Agreements (SLAs).",
+        "**Tactical Workforce Tooling:** Developed Excel-based automation tools to streamline daily workforce tracking. Replaced labor-intensive manual data entry with automated workbooks.",
+        "**Real-Time Scheduling Adjustments:** Performed daily data analysis to optimize agent schedules and manage immediate staffing requirements.",
+        "**Cross-Site Collaboration & Mentorship:** Partnered with leadership across geographic locations to standardize reporting and operational protocols."
+      ]
+    },
+    {
+      "id": "exp-valero",
+      "company": "Valero Energy Corporation",
+      "position": "Store Manager",
+      "duration": "December 2006 - September 2009 (2 years 10 months)",
+      "location": "Corpus Christi, Texas",
+      "highlights": [
+        "**Financial Stewardship & P&L Management:** Directly responsible for maintaining and increasing Gross Profit and Gross Profit Margins through strategic pricing, waste reduction, and labor optimization.",
+        "**Operational Excellence & Standards:** Enforced rigorous store standards for merchandising, safety, and customer experience. Managed end-to-end inventory logistics.",
+        "**Talent Development & Pipeline Engineering:** Orchestrated the full lifecycle of human capital management, including interviewing, hiring, and onboarding.",
+        "**Training & Methodology:** Standardized operational procedures by delivering a hybrid training model of on-the-job mentorship and technical computer-based coursework.",
+        "**Strategic Workforce Scheduling:** Developed and managed complex staff schedules to align labor hours with peak customer traffic patterns.",
+        "**Inventory Control & Asset Management:** Directed comprehensive inventory audits and lifecycle management."
+      ]
+    }
+  ],
+
+  "skills": {
+    "AI & Machine Learning": [
+      "Knowledge Engineering",
+      "Generative AI Security",
+      "Generative AI Risk Management",
+      "LLM Red Teaming",
+      "Prompt Engineering",
+      "AI Governance",
+      "AI Policy, Governance, and Regulation",
+      "NIST AI RMF",
+      "Achitectural Fragility & Instruction Hierarchy Inversion in LLMs"
+    ],
+    "Computer Vision & Image Processing": [
+      "Computer Vision",
+      "Image Processing",
+      "Stable Diffusion (SDXL)",
+      "Open The Eyes: High-Fidelity Generative Restoration Pipeline"
+    ],
+    "Data Science & Analytics": [
+      "Data Science",
+      "Data Science, Analytics & BI",
+      "Data Analysis",
+      "Data Mining",
+      "Data Visualization",
+      "Fraud Detection",
+      "Risk Pattern Identification",
+      "Forecasting"
+    ],
+    "Programming Languages": [
+      "Python",
+      "Java Spring Boot",
+      "JavaScript",
+      "jQuery",
+      "r script",
+      "SQL",
+      "VBA (Visual Basic for Applications)",
+      "SAS (Programming Language)"
+    ],
+    "Data Architecture & ETL": [
+      "Data Architecture",
+      "Data Engineering",
+      "Extract, Transform, Load (ETL)",
+      "Data Integrity",
+      "Data Reconciliation & Customer Matching",
+      "Source System Analysis",
+      "TIBCO Data Virtualization (TDV)",
+      "IBM DataStage",
+      "SQL Server / Teradata"
+    ],
+    "Databases & Data Platforms": [
+      "SQL",
+      "Microsoft SQL Server",
+      "Oracle Database",
+      "SQL Server / Teradata",
+      "Snowflake",
+      "DB2"
+    ],
+    "Business Intelligence & Visualization": [
+      "TIBCO Spotfire (Advanced)",
+      "Spotfire",
+      "Tableau",
+      "Microsoft Power BI",
+      "Data Visualization"
+    ],
+    "Cloud & Infrastructure": [
+      "Kubernetes",
+      "Docker",
+      "Microservices",
+      "GitLab CI/CD",
+      "AWS"
+    ],
+    "Cybersecurity & Compliance": [
+      "Cybersecurity",
+      "Information Security",
+      "Red Teaming",
+      "Security Awareness"
+    ],
+    "Workforce Management & Operations": [
+      "Workforce Management",
+      "Verint",
+      "Verint Workforce Management",
+      "Avaya Telephony Systems",
+      "Real-Time Adherence",
+      "Service-Level Agreements (SLA)",
+      "Shift Bidding & Optimization",
+      "Intraday Management",
+      "Operational Metrics"
+    ],
+    "Call Center & Communication Systems": [
+      "Cisco CUIC",
+      "Cisco Call Manager",
+      "Acoustic Sentiment Analysis",
+      "Call Centers",
+      "Telecommunications",
+      "Technical Support"
+    ],
+    "Business & Operations": [
+      "Operations Management",
+      "Talent Development",
+      "Inventory Control",
+      "Strategic Scheduling",
+      "Profit & Loss (P&L) Management",
+      "Program Management",
+      "Strategic Planning",
+      "Business Analysis",
+      "Analysis"
+    ],
+    "Technical Support & Troubleshooting": [
+      "Technical Troubleshooting",
+      "Root Cause Analysis",
+      "Troubleshooting",
+      "Technical Support",
+      "Help Desk Support",
+      "De-escalation & Crisis Management",
+      "Technical Mentorship"
+    ],
+    "Hardware & Systems": [
+      "Embedded Systems",
+      "Network Infrastructure (OSI Model)",
+      "Digital Logic & Circuit Design",
+      "Microprocessor Architecture",
+      "Systems Diagnostics & Troubleshooting"
+    ],
+    "CRM & Business Tools": [
+      "Salesforce CRM",
+      "Microsoft Office",
+      "SharePoint"
+    ],
+    "Leadership & Soft Skills": [
+      "Team Leadership",
+      "Cross-functional Team Leadership",
+      "Leadership",
+      "Management",
+      "Customer Service",
+      "Interviews",
+      "Networking"
+    ],
+    "Information Architecture & Knowledge Management": [
+      "Information Architecture",
+      "Data Management",
+      "Knowledge Engineering: Persona-Based Career Logic & Dossier Synthesis",
+      "Synthetic Data: Seed-Stability & Character Consistency Pipeline"
+    ]
+  },
+
+  "education": [
+    {
+      "degree": "Associate of Science (A.S.)",
+      "field": "Computer Engineering Electronics Technology",
+      "institution": "ITT Technical Institute-San Antonio",
+      "year": "2009 - 2011"
+    }
+  ]
+}

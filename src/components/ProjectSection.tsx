@@ -1,0 +1,44 @@
+import React from 'react';
+import { ProjectCard } from './ProjectCard';
+import projectsData from '../data/projects.json';
+import type { Project } from '../types/project';
+
+export const ProjectSection: React.FC = () => {
+  const projects = projectsData as Project[];
+
+  return (
+    <section id="projects" className="py-20 px-4 max-w-7xl mx-auto">
+      <div className="mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-4">
+          Featured Projects & Research
+        </h2>
+        <p className="text-xl text-slate-400 max-w-3xl">
+          A showcase of my technical work spanning AI research, computer vision, and knowledge engineering.
+          Each project includes comprehensive forensic documentation and production implementations.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+
+      {/* Call to action */}
+      <div className="mt-16 p-8 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-lg text-center">
+        <h3 className="text-2xl font-bold text-slate-100 mb-2">Want to learn more?</h3>
+        <p className="text-slate-400 mb-4">
+          Explore the detailed technical documentation for each project
+        </p>
+        <a
+          href="https://github.com/coder0951"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"
+        >
+          View on GitHub →
+        </a>
+      </div>
+    </section>
+  );
+};

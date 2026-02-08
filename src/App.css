@@ -1,0 +1,61 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.post-content {
+  color: #e2e8f0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  color: #f8fafc;
+  margin: 1.2rem 0 0.6rem;
+}
+
+.post-content a {
+  color: #60a5fa;
+}
+
+.post-content pre,
+.post-content code {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+  border-radius: 6px;
+  padding: 0.25rem 0.4rem;
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.post-content pre {
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0.75rem 0 0.75rem 1.25rem;
+}
+
+.post-content li {
+  margin: 0.35rem 0;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #334155;
+  padding-left: 0.75rem;
+  color: #cbd5f5;
+  margin: 1rem 0;
+}
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid #1f2937;
+  margin: 1.5rem 0;
+}

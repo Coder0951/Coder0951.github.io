@@ -1,0 +1,65 @@
+{
+  "name": "Tyger Guzman",
+  "title": "Full-Stack Software Engineer | Data Science & Analysis | AI Research",
+  "location": "San Antonio, Texas Metropolitan Area",
+  "contact": {
+    "phone": "361-726-3399",
+    "email": "tyger0951@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/tyger-guzman-a7166490",
+    "portfolio": "https://coder0951.github.io"
+  },
+  "topSkills": [
+    "Knowledge Engineering",
+    "Information Architecture",
+    "Data Integrity"
+  ],
+  "summary": "Software Engineer & Security Specialist with a 20-year history of turning complex data into actionable enterprise intelligence. At USAA, I bridge technical architecture and business value—engineering solutions across full-stack development, automated fraud detection, and adversarial AI research.",
+  "professionalArcIntro": "My career is defined by technical evolution and solving \"impossible\" data problems:",
+  "professionalArcPoints": [
+    {
+      "title": "The Foundation",
+      "description": "Mastered enterprise automation—engineering VBA-based tools for 1,000+ agents at Pace and real-time workforce analytics at Medtronic."
+    },
+    {
+      "title": "The Scale",
+      "description": "At Mphasis, led technical data reconciliation for a major global logistics M&A (FedEx), using TIBCO Data Virtualization to sync global datasets."
+    }
+  ],
+  "professionalArcClosing": "This veteran perspective drives a Systems-First mindset ensuring long-term stability, security, and member trust in Cloud and AI engineering.",
+  "usaaOverview": "I drive innovation across three domains to protect the membership and modernize the enterprise:",
+  "usaaPoints": [
+    {
+      "title": "Security Awareness",
+      "description": "Modernizing data pipelines using Python, Docker, and Kubernetes (K8s) via GitLab CI/CD to scale security telemetry."
+    },
+    {
+      "title": "Identity Management (MIAM)",
+      "description": "Developing secure portals using React and Java Spring Boot to manage identity preferences for millions of members."
+    },
+    {
+      "title": "Internal Fraud Monitoring",
+      "description": "Engineering automated surveillance models by processing millions of transactions through SAS Fraud Detection and IBM DataStage."
+    }
+  ],
+  "aiResearchIntro": "AI-Ready focus on generative system security and Human-in-the-Loop safety for enterprise adoption:",
+  "aiResearchPoints": [
+    {
+      "title": "Adversarial Auditing",
+      "description": "Forensic audits of Attention Mechanisms to identify vulnerabilities like Instruction Hierarchy Inversion and bypass risks."
+    },
+    {
+      "title": "NIST Alignment",
+      "description": "Mapping findings to the NIST AI RMF 1.0 (Govern, Map, Manage) to create defensible AI governance frameworks."
+    },
+    {
+      "title": "Infrastructure",
+      "description": "Engineering bare-metal Linux environments with hardware-accelerated CUDA for secure, local model inference."
+    }
+  ],
+  "technicalToolkit": {
+    "languages": ["Python", "Java Spring Boot", "React", "JavaScript", "SQL", "VBA", "SAS"],
+    "dataArchitecture": ["TIBCO (TDV/Spotfire)", "IBM DataStage", "Snowflake", "Oracle", "DB2"],
+    "cloudInfrastructure": ["Kubernetes", "Docker", "GitLab CI/CD", "Linux (Pop!OS/Ubuntu)"]
+  },
+  "philosophy": "Analytical by nature, business-focused in practice. Whether analyzing fraud or building next-gen AI tools, I always ask: what decision does this enable? I thrive between technical possibility and business value."
+}
