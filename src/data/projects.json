@@ -14,7 +14,7 @@
       "Regulatory Compliance Analysis"
     ],
     "highlights": [
-      "467-message satiation threshold discovery (context window vulnerability)",
+      "640-entry satiation threshold discovery (context window vulnerability)",
       "100% breach success rate across all tested domains post-satiation",
       "Multi-domain regulatory exposure: Financial (SEC), Medical (FDA), Legal (UPL), Cyber (CVE)",
       "22.1% ROI projection with 6-ticker portfolio (NVDA, LLY, ANET, HIMS, SOUN)",
@@ -27,7 +27,7 @@
       "Proposed IWR (Instruction Weight Reinforcement) mitigation framework"
     ],
     "learnings": [
-      "Static system prompts fail exponentially with context depth (100% authority → 8% at 467 messages)",
+      "Static system prompts fail exponentially with context depth (100% authority → 8% at 640 entries)",
       "Attention mechanism softmax exponentially amplifies dominant signals (user context > safety)",
       "RLHF training creates exploitable objective conflicts (λ_Helpfulness > λ_Safety at saturation)",
       "High-entropy personalized variables create 'attention gravity wells' in KV-cache",
@@ -41,15 +41,15 @@
     "challenges": [
       "Balancing research ethics with comprehensive vulnerability testing",
       "Preventing premature disclosure while documenting for responsible reporting",
-      "Maintaining PII redaction across 467-message forensic timeline",
+      "Maintaining PII redaction across 640-entry forensic timeline",
       "Distinguishing deterministic exploits from model hallucinations",
-      "Validating reproducibility across multiple sessions (467 messages = 62+ hours)",
+      "Validating reproducibility across multiple sessions (640 entries = 85+ hours)",
       "Mapping technical findings to NIST AI RMF regulatory framework",
       "Proposing actionable mitigations without access to model training data"
     ],
     "outcomes": [
       "Documented first systematic study of context-depth safety degradation in LLMs",
-      "Identified 467-message threshold as architectural vulnerability (not prompt trick)",
+      "Identified 640-entry threshold as architectural vulnerability (not prompt trick)",
       "Demonstrated 100% multi-domain breach rate (Financial, Legal, Medical, Ideological, Cyber)",
       "Proposed IWR framework: Dynamic λ_Safety scaling, instruction re-injection every 100 messages",
       "NIST AI RMF gap analysis: Systematic failures across all four core functions",
